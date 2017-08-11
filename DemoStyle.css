@@ -605,7 +605,8 @@ a.keyword {
 }
 
 #content{
-  margin-top: 40px;
+  position: relative;
+  margin-top: 43px;
 }
 
 #main {
@@ -697,7 +698,7 @@ a.keyword {
   position: relative;
 }
 
-.entry-header .entry-title {
+.entry-title {
   display: block;
   padding: 10px 150px 10px 56px;
   background: #616161;
@@ -1383,26 +1384,18 @@ font-size: 90%;
 .page-archive .archive-entries .archive-entry {
   margin-bottom: 20px;
   background: #FFFFFF;
-  padding-left: calc(50% + 10px);
-  padding-right: 10px;
-  border-radius: 5px;
-  border-top: 5px #454545 solid;
+  border-radius: 8px;
 }
 
 .page-archive .archive-entries .entry-title {
   font-size: 130%;
-  margin: 10px 0 50px 0;
-}
-.page-archive .archive-entries .entry-title a{
-  color: #454545;
 }
 .page-archive .date {
   display: inline-block;
   position: absolute;
   width: 80px;
   text-align: center;
-  top: 0px;
-  right: 20px;
+  right: 125px;
   padding: 5px 15px;
   font-weight: bold;
   background: #FFFFFF;
@@ -1414,14 +1407,17 @@ font-size: 90%;
   text-decoration: none;
   font-size: 90%;
 }
+
 .page-archive .archive-entries .categories {
   position: relative;
-  margin: -49px 0 0 0;
+  margin-left: 10px;
   overflow: hidden;
 }
-
+.archive-entry-body{
+  margin: 0 20px;
+}
 .page-archive .archive-entries .entry-description {
-  margin: 0 0 1em;
+  margin: 1.3em 0 1em;
   line-height: 1.5em;
   font-size: 80%;
 }
