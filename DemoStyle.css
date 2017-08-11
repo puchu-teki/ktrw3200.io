@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 html {
   font-family: sans-serif;
   /* 1 */
@@ -128,7 +129,6 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 
@@ -231,7 +231,7 @@ pre {
  */
 
 code, kbd, pre, samp {
-  font-family: monospace, monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 1em;
 }
 
@@ -709,6 +709,18 @@ a.keyword {
   margin-bottom: 35px;
   vertical-align: middle;
 }
+
+.entry-header .entry-title::before{
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  left: 15px;
+  top: calc(50% - 19px);
+  transform: translateY(-50%);
+}
 /* 日付 */
 
 .entry-header .date {
@@ -795,7 +807,21 @@ a.keyword {
   text-decoration: none !important;
 }
 
+/*目次の書式*/
 
+
+.entry-content .table-of-contents{
+  padding: 10px 10px 10px 30px;
+  background: #EEEEEE;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.table-of-contents li ul,
+.table-of-contents li ul li ul{
+  padding: 5px 10px 5px 20px;
+  border-style: none;
+}
 /* entry-content の中の書式 */
 
 .entry-content {
@@ -910,17 +936,16 @@ a.keyword {
   white-space: pre;
   border: 0;
   background: transparent;
-  font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Monaco', 'Roboto Mono', 'Courier New', Courier, monospace, sans-serif;
 }
 
 .entry-content code {
-  font-size: 90%;
+  font-size: 100%;
   margin: 0 2px;
-  padding: 0 5px;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-  font-family: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+  padding: 1px 8px;
+  background-color: #CFD8DC;
+  border-radius: 2px;
+  font-family: 'Monaco', 'Roboto Mono', 'Courier New', Courier, monospace, sans-serif;
 }
 
 .entry-content .hatena-asin-detail li {
