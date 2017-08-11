@@ -942,7 +942,8 @@ a.keyword {
 .entry-content code {
   font-size: 100%;
   margin: 0 2px;
-  padding: 1px 8px;
+  padding: 1px 5px;
+  border-style: none;
   background-color: #CFD8DC;
   border-radius: 2px;
   font-family: 'Monaco', 'Roboto Mono', 'Courier New', Courier, monospace, sans-serif;
