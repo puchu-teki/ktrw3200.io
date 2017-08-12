@@ -655,7 +655,11 @@ a.keyword {
   margin: 5px 0 0 0;
 }
 
-
+/*ヘッダー画像挿入時のブログタイトル*/
+.header-image-enable #blog-title{
+  padding: 0;
+  background: #2196F3;
+}
 /* ヘッダ画像を設定したとき */
 
 .header-image-enable #title {
