@@ -933,6 +933,7 @@ background: #2196F3;
 }
 
 .entry-content pre>code {
+  font-size: 90%;
   margin: 0;
   padding: 0;
   white-space: pre;
@@ -942,7 +943,7 @@ background: #2196F3;
 }
 
 .entry-content code {
-  font-size: 100%;
+  font-size: 90%;
   margin: 0 2px;
   padding: 1px 5px;
   border-style: none;
@@ -1074,10 +1075,11 @@ text-decoration: none;
 font-size: 1.1em;
 line-height: 2em;
 border-bottom: 1px #757575 solid;
+transition: 0.3s all;
 }
 
 .leave-comment-title:hover {
-  background-color: #f5f5f5;
+  color: #BDBDBD;
 }
 
 
