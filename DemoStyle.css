@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+@import url('http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js');
 html {
   font-family: sans-serif;
   /* 1 */
