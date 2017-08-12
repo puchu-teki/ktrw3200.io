@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
-@import url('http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js');
 html {
   font-family: sans-serif;
   /* 1 */
@@ -604,7 +603,7 @@ a.keyword {
   display: flex;
 }
 
-#content{
+#content {
   position: relative;
 }
 
@@ -612,17 +611,20 @@ a.keyword {
   width: 60%;
   margin: 0 auto;
 }
-#wrapper{
+
+#wrapper {
   /* order: 2; box2と順番入れ替え */
 }
+
 #box2 {
   z-index: 2;
   width: 100%;
+  /* 範囲設定スクロール
   height: 250px;
   overflow-y: scroll;
+  */
   float: right;
   /* order: 1;  #mainと順番入れ替え */
-
   /*
     position: fixed;
     margin-top: -254px;
@@ -639,10 +641,11 @@ a.keyword {
   padding: 15px 0;
   width: 100%;
 }
-#blog-title,
-.header-image-enable #blog-title{
-background: #2196F3;
+
+#blog-title, .header-image-enable #blog-title {
+  background: #2196F3;
 }
+
 #title {
   margin: 0;
   text-align: center;
@@ -660,16 +663,19 @@ background: #2196F3;
   text-align: center;
 }
 
+
 /*ヘッダー画像挿入時のブログタイトル*/
-.header-image-enable #blog-title{
+
+.header-image-enable #blog-title {
   padding: 0;
 }
+
+
 /* ヘッダ画像を設定したとき */
 
 .header-image-enable #title {
   padding-top: 70px;
 }
-
 
 
 /* パンくず（カテゴリーページで表示されます） */
@@ -695,8 +701,6 @@ background: #2196F3;
   border-radius: 8px;
 }
 
-
-
 .entry-header {
   position: relative;
 }
@@ -712,8 +716,7 @@ background: #2196F3;
   margin-bottom: 35px;
   vertical-align: middle;
 }
-
-.entry-header .entry-title::before{
+.entry-header .entry-title::before {
   position: absolute;
   content: "";
   width: 24px;
@@ -724,6 +727,8 @@ background: #2196F3;
   top: calc(50% - 19px);
   transform: translateY(-50%);
 }
+
+
 /* 日付 */
 
 .entry-header .date {
@@ -736,7 +741,7 @@ background: #2196F3;
   padding: 5px 15px;
   font-weight: bold;
   background: #FFFFFF;
-  border-radius: 0  0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .entry-header .date a {
@@ -810,21 +815,22 @@ background: #2196F3;
   text-decoration: none !important;
 }
 
+
 /*目次の書式*/
 
-
-.entry-content .table-of-contents{
+.entry-content .table-of-contents {
   padding: 10px 10px 10px 30px;
   background: #EEEEEE;
   border-radius: 5px;
   border-style: none;
 }
 
-.table-of-contents li ul,
-.table-of-contents li ul li ul{
+.table-of-contents li ul, .table-of-contents li ul li ul {
   padding: 5px 10px 5px 20px;
   border-style: none;
 }
+
+
 /* entry-content の中の書式 */
 
 .entry-content {
@@ -841,14 +847,26 @@ background: #2196F3;
   max-width: 100%;
 }
 
-.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
   margin: 1.3em 0 0.8em 0;
   line-height: 1.5;
   color: #454545;
 }
-
+.entry-content h1 .keyword,
+.entry-content h2 .keyword,
+.entry-content h3 .keyword,
+.entry-content h4 .keyword,
+.entry-content h5 .keyword,
+.entry-content h6 .keyword{
+  color: #454545;
+}
 .entry-content h1 {
-  font-size: 160%;
+  font-size: 150%;
 }
 
 .entry-content h2 {
@@ -856,7 +874,7 @@ background: #2196F3;
 }
 
 .entry-content h3 {
-  font-size: 150%;
+  font-size: 140%;
   text-align: center;
   color: #42A5F5;
 }
@@ -876,26 +894,27 @@ background: #2196F3;
 .entry-content h6 {
   font-size: 100%;
 }
-.entry-content hr{
+
+.entry-content hr {
   border-top: 1px #BDBDBD dashed;
   border-bottom: 0;
   margin: 0 -10px;
 }
-.entry-content ol,
-.entry-content ul{
+
+.entry-content ol, .entry-content ul {
   border: 1px #BDBDBD solid;
   padding: 10px 10px 10px 40px;
 }
-.entry-content ol ol,
-.entry-content ol ul,
-.entry-content ul ul,
-.entry-content ul ol{
+
+.entry-content ol ol, .entry-content ol ul, .entry-content ul ul, .entry-content ul ol {
   margin-top: 10px;
 }
-.entry-content blockquote{
+
+.entry-content blockquote {
   background: #F5F5F5;
   padding: 10px 10px 10px 40px;
 }
+
 .entry-content table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -957,11 +976,15 @@ background: #2196F3;
   line-height: 1.4;
 }
 
+
 /*記事の設定*/
-.entry-content{
+
+.entry-content {
   margin-top: -15px;
   padding: 0 20px;
 }
+
+
 /* entry-footer */
 
 .entry-footer {
@@ -982,30 +1005,36 @@ background: #2196F3;
   margin: 10px 0;
 }
 
+
 /*はてなスター*/
-.hatena-star-container{
+
+.hatena-star-container {
   padding: 5px 0;
 }
-.hatena-star-star-container{
+
+.hatena-star-star-container {
   height: 25px;
   margin: auto 0;
 }
-.hatena-star-add-button{
 
-}
-.hatena-star-star-container a{
+.hatena-star-add-button {}
+
+.hatena-star-star-container a {
   margin: 0;
   width: 20px;
   height: 20px;
 }
-.hatena-star-user{
+
+.hatena-star-user {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
-.hatena-star-star{
+
+.hatena-star-star {
   margin-left: -11px;
 }
+
 
 /* コメント */
 
@@ -1068,15 +1097,15 @@ background: #2196F3;
 
 .leave-comment-title {
   position: relative;
-display: inline-block;
-width: 100%;
-text-align: center;
-color: #757575;
-text-decoration: none;
-font-size: 1.1em;
-line-height: 2em;
-border-bottom: 1px #757575 solid;
-transition: 0.3s all;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #757575;
+  text-decoration: none;
+  font-size: 1.1em;
+  line-height: 2em;
+  border-bottom: 1px #757575 solid;
+  transition: 0.3s all;
 }
 
 .leave-comment-title:hover {
@@ -1100,10 +1129,12 @@ a.entry-see-more {
   border-radius: 30px;
   transition: 0.1s all;
 }
-a.entry-see-more:hover{
+
+a.entry-see-more:hover {
   background: #90CAF9;
   transition: 0.1s all;
 }
+
 
 /* sidebar */
 
@@ -1133,9 +1164,9 @@ a.entry-see-more:hover{
 
 #box2-inner .hatena-module:not(.hatena-module-profile) {
   display: block;
-  width: 28%;
+  width: 30%;
   float: left;
-  margin: 10px 2%;
+  margin: 10px 0 10px 2.5%;
   flex-direction: row;
 }
 
@@ -1237,9 +1268,11 @@ a.entry-see-more:hover{
 /* urllist module
     リンク・最新記事・最近のコメント・月別アーカイブ・カテゴリモジュールは .hatena-urllist という共通の class が振られます
 */
-.hatena-module-related-entries{
+
+.hatena-module-related-entries {
   margin: 20px 0;
 }
+
 .hatena-module-related-entries .hatena-urllist {
   list-style: none;
   margin: 0 0 0 0;
@@ -1259,47 +1292,57 @@ a.entry-see-more:hover{
 }
 
 .hatena-module-related-entries .related-entries-entry-body {
-    display: none;
+  margin-left: 130px;
+  margin-top: 10px;
+  font-size: 90%;
 }
-.hatena-module-related-entries .urllist-item-inner{
+
+.hatena-module-related-entries .urllist-item-inner {
   position: relative;
   height: 100px;
   margin: auto 0;
-  text-align: center;
-  vertical-align: middle;
 }
-.hatena-module-related-entries .urllist-image{
+
+.hatena-module-related-entries .urllist-image {
   border-radius: 5px 0 0 5px;
   position: absolute;
   display: block;
   border-right: 1px solid #DDDDDD;
 }
-.hatena-module-related-entries .urllist-date-link{
-    position: absolute;
-    display: block;
-    width: 80px;
-    text-align: center;
-    top: 0px;
-    right: 20px;
-    padding: 2px 15px;
-    background: #424242;
-    border-radius: 0  0 5px 5px;
+
+.hatena-module-related-entries .urllist-date-link {
+  position: relative;
+  display: block;
+  font-size: 110%;
+  width: 80px;
+  text-align: center;
+  top: 0px;
+  left: calc(100% - 130px);
+  padding: 2px 15px;
+  background: #424242;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: -10px;
 }
-.hatena-module-related-entries .urllist-date-link a{
-color: #FFFFFF;
-text-decoration: none;
-font-size: 90%;
+
+.hatena-module-related-entries .urllist-date-link a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 90%;
 }
-.hatena-module-related-entries .urllist-title-link{
+
+.hatena-module-related-entries .urllist-title-link {
   position: relative;
   display: inline-block;
-  width: calc(100% - 100px);
-  height: 100%;
-  font-size: 120%;
+  width: calc(100% - 260px);
+  font-size: 110%;
   font-weight: bold;
   line-height: 1.5em;
-  margin: auto 0 auto 100px;
+  margin-left: 120px;
+  color: #414141;
 }
+
+
+
 /* Search module */
 
 .hatena-module-search-box .search-form {
@@ -1360,9 +1403,9 @@ font-size: 90%;
   clear: both;
   content: ".";
 }
-.pager .pager-prev,
-.pager .pager-next{
-}
+
+.pager .pager-prev, .pager .pager-next {}
+
 .pager .pager-prev {
   float: left;
   text-align: left;
@@ -1374,20 +1417,20 @@ font-size: 90%;
   text-align: right;
   width: 45%;
 }
-.pager .pager-prev a,
-.pager .pager-next a{
+
+.pager .pager-prev a, .pager .pager-next a {
   width: 100%;
   text-align: center;
   display: inline-block;
   color: #616161;
   text-decoration: none;
 }
-.pager .pager-prev a:hover,
-.pager .pager-next a:hover{
+
+.pager .pager-prev a:hover, .pager .pager-next a:hover {
   color: #BDBDBD;
 }
-.pager .pager-prev a::before,
-.pager .pager-next a::before{
+
+.pager .pager-prev a::before, .pager .pager-next a::before {
   font-family: "blogicon";
   display: block;
   font-size: 32px;
@@ -1398,16 +1441,20 @@ font-size: 90%;
   width: 50px;
   height: 50px;
 }
-.pager .pager-prev a::before{
+
+.pager .pager-prev a::before {
   content: "\f005";
 }
-.pager .pager-next a::before{
+
+.pager .pager-next a::before {
   content: "\f006"
 }
-.pager-next .pager-arrow,
-.pager-prev .pager-arrow{
+
+.pager-next .pager-arrow, .pager-prev .pager-arrow {
   display: none;
 }
+
+
 /* Footer */
 
 #footer {
@@ -1443,9 +1490,11 @@ font-size: 90%;
 
 
 /* archive ページ */
-.archive-entries{
+
+.archive-entries {
   margin: 30px auto;
 }
+
 .page-archive .archive-entries .archive-entry {
   margin-bottom: 20px;
   background: #FFFFFF;
@@ -1455,6 +1504,7 @@ font-size: 90%;
 .page-archive .archive-entries .entry-title {
   font-size: 130%;
 }
+
 .page-archive .date {
   display: inline-block;
   position: absolute;
@@ -1464,7 +1514,7 @@ font-size: 90%;
   padding: 5px 15px;
   font-weight: bold;
   background: #FFFFFF;
-  border-radius: 0  0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .page-archive .date a {
@@ -1478,15 +1528,18 @@ font-size: 90%;
   margin-left: 10px;
   overflow: hidden;
 }
-.archive-entry-body{
+
+.archive-entry-body {
   margin: 0 20px;
 }
+
 .page-archive .archive-entries .entry-description {
   margin: 1.3em 0 1em;
   line-height: 1.5em;
   font-size: 80%;
 }
-.page-archive .archive-entries .entry-thumb-link{
+
+.page-archive .archive-entries .entry-thumb-link {
   position: absolute;
   left: 0px;
 }
@@ -1518,7 +1571,6 @@ font-size: 90%;
   #box2 {
     width: 100%;
   }
-
   #box2-inner .hatena-module:not(.hatena-module-profile) {
     width: 46%;
     margin: 10px 2%;
@@ -1536,14 +1588,14 @@ font-size: 90%;
     width: 100%;
     word-wrap: normal;
   }
-  #content{
+  #content {
     margin-top: 0;
   }
   #main {
     width: 100%;
     float: none;
   }
-  .entry{
+  .entry {
     width: 100%;
   }
   #box2 {
@@ -1561,9 +1613,8 @@ font-size: 90%;
     top: -30px;
     left: 0px;
   }
-/*見た目変更*/
-  .entry-title,
-  .entry{
+  /*見た目変更*/
+  .entry-title, .entry {
     border-radius: 0;
   }
 }
