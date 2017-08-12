@@ -637,9 +637,11 @@ a.keyword {
   top: 0px;
   padding: 15px 0;
   width: 100%;
-  background: #2196F3;
 }
-
+#blog-title,
+.header-image-enable #blog-title{
+background: #2196F3;
+}
 #title {
   margin: 0;
   text-align: center;
@@ -658,7 +660,6 @@ a.keyword {
 /*ヘッダー画像挿入時のブログタイトル*/
 .header-image-enable #blog-title{
   padding: 0;
-  background: #2196F3;
 }
 /* ヘッダ画像を設定したとき */
 
