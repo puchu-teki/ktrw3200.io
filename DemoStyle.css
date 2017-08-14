@@ -485,15 +485,18 @@ html, body {
 }
 
 a {
-  color: #1487bd;
+  color: #00BCD4;
+  transition:0.3s all ease;
 }
 
 a:visited {
-  color: #789dae;
+  color: #00ACC1;
+  transition:0.3s all ease;
 }
 
 a:hover {
-  color: #0f5373;
+  color: #00838F;
+  transition:0.3s all ease;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
@@ -843,6 +846,27 @@ a.keyword {
   margin: 0 0 1em 0;
 }
 
+.entry-content p>a {
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  text-decoration: none;
+}
+.entry-content p>a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #00838F;
+  transition: .3s;
+}
+.entry-content p>a:hover::after {
+  width: 100%;
+}
+
+
 .entry-content img {
   max-width: 100%;
 }
@@ -1159,7 +1183,7 @@ a.entry-see-more:hover {
 }
 
 #box2-inner {
-  padding: 0 2% 20px 2%;
+  padding: 0 15% 20px 15%;
 }
 
 #box2-inner .hatena-module:not(.hatena-module-profile) {
@@ -1191,7 +1215,7 @@ a.entry-see-more:hover {
 }
 
 
-/* Profile module */
+/* プロフィール module */
 
 .hatena-module-profile .hatena-module-title {
   position: absolute;
@@ -1205,10 +1229,9 @@ a.entry-see-more:hover {
   margin-bottom: 20px;
 }
 
-#box2-inner .hatena-module .hatena-module-body {
+#box2-inner .hatena-module-profile .hatena-module-body {
   position: relative;
   height: 210px;
-  vertical-align: middle;
 }
 
 .profile-icon-link {
@@ -1217,8 +1240,7 @@ a.entry-see-more:hover {
   float: left;
   margin-right: 20px;
   margin-left: 8%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 71px;
 }
 
 .profile-icon {
@@ -1232,7 +1254,6 @@ a.entry-see-more:hover {
   position: relative;
   display: inline-block;
   float: left;
-  width: 30%;
   margin-left: 20px;
   line-height: 68px;
   top: 50%;
@@ -1571,6 +1592,9 @@ a.entry-see-more:hover {
   #box2 {
     width: 100%;
   }
+  #box2-inner {
+    padding: 0 2% 20px 2%;
+  }
   #box2-inner .hatena-module:not(.hatena-module-profile) {
     width: 46%;
     margin: 10px 2%;
@@ -1605,6 +1629,7 @@ a.entry-see-more:hover {
   #box2-inner {
     width: 96%;
     margin: 0 auto;
+    padding: 0 2% 20px 2%;
   }
   #box2-inner .hatena-module:not(.hatena-module-profile) {
     width: 96%;
@@ -1616,6 +1641,17 @@ a.entry-see-more:hover {
   /*見た目変更*/
   .entry-title, .entry {
     border-radius: 0;
+  }
+
+  /*プロフィールの見た目*/
+  .profile-description{
+    width: 80%;
+    left: 0;
+    border-left: none;
+    margin-top: 100px;
+  }
+
+  #box2-inner .hatena-module-profile .hatena-module-body{
   }
 }
 
