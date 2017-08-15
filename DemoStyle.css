@@ -1218,15 +1218,13 @@ a.entry-see-more:hover {
 /* プロフィール module */
 
 .hatena-module-profile .hatena-module-title {
-  position: absolute;
+  position: relative;
   margin-left: 2%;
 }
 
 .hatena-module-profile {
   position: relative;
   width: 100%;
-  margin-top: -10px;
-  margin-bottom: 60px;
 }
 
 #box2-inner .hatena-module-profile .hatena-module-body {
@@ -1239,7 +1237,6 @@ a.entry-see-more:hover {
   float: left;
   margin-right: 20px;
   margin-left: 8%;
-  top: 71px;
 }
 
 .profile-icon {
@@ -1254,28 +1251,22 @@ a.entry-see-more:hover {
   display: inline-block;
   float: left;
   line-height: 68px;
-  top: 71px;
-  width: 30%;
+  width: calc(90% - 84px);
 }
 
 .id a {
   font-size: 120%;
   color: #616161;
   text-decoration: none;
-  margin-right: calc(12% - 84px);
 }
 
 .profile-description {
   position: relative;
   display: inline-block;
-  width: 30%;
-  padding-left: 10%;
+  width: 80%;
   font-size: 110%;
   color: #616161;
-  border-left: 1px #757575 solid;
-  right: 0;
-  top: 103px;
-  transform: translateY(-50%);
+  margin: 20px 10%;
 }
 
 .profile-description p {
@@ -1639,19 +1630,6 @@ a.entry-see-more:hover {
   /*見た目変更*/
   .entry-title, .entry {
     border-radius: 0;
-  }
-
-  /*プロフィールの見た目*/
-  .profile-description{
-    width: 80%;
-    border-left: none;
-    margin-top: 90px;
-    transform: translateY(-100%);
-  }
-
-  .id{
-    width: calc(90% - 84px);
-    margin-right: 0;
   }
 }
 
