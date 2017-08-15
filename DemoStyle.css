@@ -1292,6 +1292,7 @@ a.entry-see-more:hover {
 .hatena-module-related-entries .hatena-urllist li {
   background: #FFFFFF;
   border-radius: 5px;
+  overflow: hidden;
   margin: 10px auto;
   height: 100px;
   width: 100%;
@@ -1302,9 +1303,8 @@ a.entry-see-more:hover {
 }
 
 .hatena-module-related-entries .related-entries-entry-body {
-  margin-left: 130px;
-  margin-top: 10px;
-  font-size: 90%;
+  margin-left: 120px;
+  font-size: 80%;
 }
 
 .hatena-module-related-entries .urllist-item-inner {
@@ -1323,15 +1323,14 @@ a.entry-see-more:hover {
 .hatena-module-related-entries .urllist-date-link {
   position: relative;
   display: block;
-  font-size: 110%;
+  font-size: 80%;
   width: 80px;
   text-align: center;
   top: 0px;
   left: calc(100% - 130px);
-  padding: 2px 15px;
+  padding: 1px 10px;
   background: #424242;
   border-radius: 0 0 5px 5px;
-  margin-bottom: -10px;
 }
 
 .hatena-module-related-entries .urllist-date-link a {
@@ -1343,11 +1342,10 @@ a.entry-see-more:hover {
 .hatena-module-related-entries .urllist-title-link {
   position: relative;
   display: inline-block;
-  width: calc(100% - 260px);
-  font-size: 110%;
+  font-size: 100%;
   font-weight: bold;
   line-height: 1.5em;
-  margin-left: 120px;
+  margin-left: 110px;
   color: #414141;
 }
 
