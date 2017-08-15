@@ -1599,7 +1599,7 @@ a.entry-see-more:hover {
   }
   #container {
     width: 100%;
-    word-wrap: normal;
+    word-wrap: break-word;
   }
   #content {
     margin-top: 0;
