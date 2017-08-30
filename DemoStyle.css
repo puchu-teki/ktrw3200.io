@@ -1001,7 +1001,7 @@ a.entry-see-more:hover {
 .hatena-module-related-entries .hatena-urllist {
   list-style: none;
   padding: 0;
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .hatena-module-related-entries .hatena-urllist li {
@@ -1017,7 +1017,6 @@ a.entry-see-more:hover {
 .hatena-module-related-entries .hatena-urllist li a {
   text-decoration: none;
 }
-
 .hatena-module-related-entries .related-entries-entry-body {
   margin-left: 110px;
   font-size: 80%;
