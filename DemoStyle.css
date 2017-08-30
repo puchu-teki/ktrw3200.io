@@ -1117,6 +1117,11 @@ a.entry-see-more:hover {
   padding-left: 0;
 }
 
+.hatena-module .recent-entries img,
+.hatena-module .entries-access-ranking img{
+  width: 80px;
+  height: 80px;
+}
 /* Pager */
 
 .pager {
