@@ -1036,8 +1036,6 @@ a.entry-see-more:hover {
   position: absolute;
   display: block;
   border-right: 1px solid #DDDDDD;
-  width: 80px;
-  height: 80px;
 }
 
 .hatena-module-related-entries .urllist-date-link {
