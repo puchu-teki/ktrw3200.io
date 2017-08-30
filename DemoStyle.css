@@ -1213,8 +1213,17 @@ a.entry-see-more:hover {
   margin-bottom: 30px;
   line-height: 24px;
 }
+.page-about .about-subscription-count{
+  margin-right: 5px;
+}
 .page-about .subscriber{
   vertical-align: middle;
+  margin-right: 10px;
+}
+.page-about .subscriber img{
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
 
 
