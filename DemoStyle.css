@@ -989,6 +989,9 @@ a.entry-see-more:hover {
   margin: 0;
 }
 
+.hatena-module-profile .hatena-follow-button-box{
+  margin: 0 10%;
+}
 
 /* urllist module
     リンク・最新記事・最近のコメント・月別アーカイブ・カテゴリモジュールは .hatena-urllist という共通の class が振られます
