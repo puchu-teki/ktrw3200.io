@@ -1232,13 +1232,14 @@ a.entry-see-more:hover {
 .archive-entries {
   margin: 30px auto;
 }
-
 .page-archive .archive-entries .archive-entry {
   margin-bottom: 20px;
   background: #FFFFFF;
   border-radius: 8px;
 }
-
+.page-archive .archive-entries .archive-entry .archive-entry-header{
+  position: relative;
+}
 .page-archive .archive-entries .entry-title {
   font-size: 130%;
 }
@@ -1248,7 +1249,7 @@ a.entry-see-more:hover {
   position: absolute;
   width: 80px;
   text-align: center;
-  right: 125px;
+  right: 20px;
   padding: 5px 15px;
   font-weight: bold;
   background: #FFFFFF;
@@ -1278,8 +1279,7 @@ a.entry-see-more:hover {
 }
 
 .page-archive .archive-entries .entry-thumb-link {
-  position: absolute;
-  left: 0px;
+  display: none;
 }
 
 
