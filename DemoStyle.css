@@ -1114,7 +1114,7 @@ a.entry-see-more:hover {
 /*最新記事*/
 .hatena-module .recent-entries,
 .hatena-module .entries-access-ranking{
-  margin-left: 0;
+  padding-left: 0;
 }
 
 /* Pager */
