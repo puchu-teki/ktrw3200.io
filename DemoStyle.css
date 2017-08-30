@@ -770,7 +770,6 @@ a.keyword {
 }
 
 .hatena-star-star {
-  margin-left: -11px;
 }
 
 
@@ -1269,7 +1268,7 @@ a.entry-see-more:hover {
 }
 
 .archive-entry-body {
-  margin: 0 20px;
+  margin: 0 20px 10px 20px;
 }
 
 .page-archive .archive-entries .entry-description {
