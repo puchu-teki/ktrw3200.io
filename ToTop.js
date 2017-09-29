@@ -1,0 +1,1 @@
+$(function(){var a=false;var b=$("#pagetop");b.css("bottom","-100px");var a=false;$(window).scroll(function(){if($(this).scrollTop()>50){if(a==false){a=true;b.stop().animate({bottom:"20px"},200)}}else{if(a){a=false;b.stop().animate({bottom:"-100px"},200)}}})});$(function(){$("#up a").click(function(){$("body,html").animate({scrollTop:0},800);return false})});
