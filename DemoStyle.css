@@ -1182,6 +1182,7 @@ a.entry-see-more:hover {
   float: left;
   margin: 10px 2%;
   flex-direction: row;
+  width: 100%;
 }
 
 .hatena-module-title {
