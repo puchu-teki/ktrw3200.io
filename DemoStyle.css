@@ -1180,7 +1180,7 @@ a.entry-see-more:hover {
 #box2-inner .hatena-module {
   display: block;
   float: left;
-  margin: 10px 0;
+  margin: 10px 2%;
   flex-direction: row;
 }
 
