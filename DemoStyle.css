@@ -851,7 +851,7 @@ a.keyword {
   display: inline-block;
   text-decoration: none;
   line-height: 36px;
-  padding: 
+  padding:
 }
 
 .entry-content .linkbox{
@@ -1573,10 +1573,6 @@ a.entry-see-more:hover {
   }
   #box2-inner {
     padding: 0 2% 20px 2%;
-  }
-  #box2-inner .hatena-module:not(.hatena-module-profile) {
-    width: 46%;
-    margin: 10px 2%;
   }
 }
 
