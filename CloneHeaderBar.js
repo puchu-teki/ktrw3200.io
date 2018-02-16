@@ -1,1 +1,1 @@
-$(function(){var a=$(".g-nav");$(window).scroll(function(){if($(this).scrollTop()>200&&a.hasClass("fixed")==false){a.addClass("fixed");a.animate({top:0},300)}else{if($(this).scrollTop()<200&&a.hasClass("fixed")==true){a.animate({top:"-70px"},300);a.removeClass("fixed")}}})});
+$(function(){var a=$("#g-nav");$(window).scroll(function(){if($(this).scrollTop()>200&&a.hasClass("fixed")==false){a.addClass("fixed");a.animate({top:0},300)}else{if($(this).scrollTop()<200&&a.hasClass("fixed")==true){a.animate({top:"-70px"},300);a.removeClass("fixed")}}})});
