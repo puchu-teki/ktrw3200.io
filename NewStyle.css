@@ -1006,7 +1006,12 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   bottom: 24px;
   right: 24px;
   outline: 0;
-  z-index: 2
+  z-index: 2;
+  opacity: 0;
+}
+
+.pullup.show{
+  opacity: 1;
 }
 
 .pullup i {
