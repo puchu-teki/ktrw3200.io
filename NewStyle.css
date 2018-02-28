@@ -285,8 +285,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #top-editarea {
-  margin-bottom: 1em;
-  position: relative;
+  /*! margin-bottom: 1em; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 
 .breadcrumb {
