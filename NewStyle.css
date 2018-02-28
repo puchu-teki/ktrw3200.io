@@ -1140,6 +1140,112 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   background: #cfd8dc
 }
 
+.share{
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-left: auto;
+}
+.share a{
+  display: block;
+  height: 100%;
+}
+.share li{
+  list-style: none;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 50%;
+  opacity:.7;
+  transition: all .2s;
+}
+.share li:hover{
+  opacity:1;
+}
+.share li svg{
+  width: 18px;
+  height: 18px;
+  margin-top: 11px;
+}
+.share .twi{
+  background: #55acee;
+}
+.share .fcb{
+  background: #3b5998;
+}
+.share .htb{
+  background: #00a5de;
+}
+.share .pkt{
+  background: #ef3f56;
+}
+
+.sidebar-follow-buttons {
+  text-align: center;
+  width: 100%;
+  letter-spacing: -.4em
+}
+
+.sidebar-follow-buttons a {
+  display: inline-block;
+  letter-spacing: normal;
+  border-radius: 2px;
+  width: 48%;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  padding: 6% 0;
+  margin: 1%
+}
+
+.sidebar-follow-buttons .inner-text {
+  font-size: 1pc
+}
+
+.sidebar-follow-buttons .hatena {
+  color: #fff;
+  background: #38393c
+}
+
+.sidebar-follow-buttons .hatena:hover {
+  background: #5f6063
+}
+
+.sidebar-follow-buttons .twitter {
+  background: #55acee;
+  color: #fff
+}
+
+.sidebar-follow-buttons .twitter:hover {
+  background: #89c7f7
+}
+
+.sidebar-follow-buttons .instagram {
+  background: #3f729b;
+  color: #fff
+}
+
+.sidebar-follow-buttons .instagram:hover {
+  background: #7aa5c7
+}
+
+.sidebar-follow-buttons .feedly {
+  background: #6cc655;
+  color: #fff
+}
+
+.sidebar-follow-buttons .feedly:hover {
+  background: #8edc7a
+}
+
+.sidebar-contact-buttons {
+  text-align: center;
+  width: 100%;
+  letter-spacing: -.4em
+}
+
 @media (max-width: 1024px) {
   #container #content {
     width: 95%;
