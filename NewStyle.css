@@ -239,7 +239,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   width: 346px;
   float: right;
   box-shadow: 0 1px 4px #00000019;
-  border-top: 15px var(--subColor) solid;
+  border-top: 15px #FF6182 solid;
   background: #fff;
   margin: 15px 0 2em;
 }
@@ -252,7 +252,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   padding: 4em 0;
   text-align: center;
   letter-spacing: .2em;
-  background: var(--mainColor);
+  background: linear-gradient(to right, #acb6e5, #86fde8);
   box-shadow: 0 1px 5px 0 #00000042;
   position: relative;
 }
@@ -301,7 +301,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   box-shadow: 0 1px 4px #00000019;
   border-radius: 1px #BDBDBD solid;
   float: left;
-  border-top: 15px var(--subColor) solid;
+  border-top: 15px #FF6182 solid;
   position: relative;
   background: #fff;
   width: 100%;
@@ -345,7 +345,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   margin-left: 10px;
   text-decoration: none;
   color: #fafafa;
-  background: var(--subColor);
+  background: #FF6182;
   border-radius: 3px;
   float: right;
 }
@@ -404,13 +404,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   bottom: -3px;
   left: 0;
   position: absolute;
-  border-bottom: 3px var(--subColor) solid;
+  border-bottom: 3px #FF6182 solid;
   width: 20%;
 }
 
 .entry-content h4 {
   font-size: 1.2em;
-  border-left: 4px var(--subColor) solid;
+  border-left: 4px #FF6182 solid;
   padding-left: .6em;
 }
 
@@ -424,7 +424,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: var(--subColor);
+  background: #FF6182;
   border-radius: 50%;
   left: 0;
   top: calc(50% - 5px);
@@ -538,8 +538,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   padding: 5px 0;
   width: 90%;
   margin: 1em 5% 0;
-  background: var(--subColor);
-  box-shadow: 0 0 5px var(--subColor);
+  background: #FF6182;
+  box-shadow: 0 0 5px #FF6182;
   color: #FFF;
   text-decoration: none;
   border-radius: 18px;
@@ -672,7 +672,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 .pager a {
-  color: var(--subColor);
+  color: #FF6182;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -692,8 +692,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   width: 24px;
   height: 24px;
   background: transparent;
-  border-left: 2px var(--subColor) solid;
-  border-top: 2px var(--subColor) solid;
+  border-left: 2px #FF6182 solid;
+  border-top: 2px #FF6182 solid;
 }
 
 .pager-prev a::before {
@@ -715,7 +715,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 .hatena-module-title {
   margin-bottom: .6em;
   padding-left: .5em;
-  border-left: 5px solid var(--subColor);
+  border-left: 5px solid #FF6182;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -821,7 +821,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   height: 30px;
   border-radius: 3px;
   margin-right: 5px;
-  background: var(--subColor);
+  background: #FF6182;
   border: none;
   outline: none;
   opacity: 1;
@@ -843,7 +843,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 .page-about .entry-content dt {
   margin-bottom: .6em;
   padding-left: .5em;
-  border-left: 5px solid var(--subColor);
+  border-left: 5px solid #FF6182;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -859,7 +859,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   padding: .7em;
   margin-top: 0;
   box-shadow: 0 1px 4px #00000019;
-  border-left: 15px var(--subColor) solid;
+  border-left: 15px #FF6182 solid;
 }
 
 .page-archive .archive-entry {
@@ -869,7 +869,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   margin-bottom: 20px;
   box-shadow: 0 1px 4px #00000019;
   float: left;
-  border-top: 15px var(--subColor) solid;
+  border-top: 15px #FF6182 solid;
   position: relative;
   background: #fff;
   padding-top: 180px;
@@ -936,7 +936,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 #footer {
-  background: var(--mainColor);
+  background: linear-gradient(to right, #acb6e5, #86fde8);
   text-align: center;
   font-size: 1em;
   color: #FFF;
@@ -996,7 +996,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--subColor);
+  background: #FF6182;
   box-shadow: 0 5px 11px -2px rgba(0, 0, 0, .18), 0 4px 9pt -7px rgba(0, 0, 0, .15);
   position: fixed;
   bottom: 24px;
@@ -1028,7 +1028,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   margin-left: 40px;
   font-size: 24px;
   font-weight: 700;
-  color: var(--subColor);
+  color: #FF6182;
   text-decoration: none;
 }
 
