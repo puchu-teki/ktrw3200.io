@@ -955,7 +955,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 #g-nav {
   width: 100%;
-  z-index: 12;
+  z-index: 3;
   background-color: #fafafa;
   position: fixed;
   top: -70px;
@@ -1002,7 +1002,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   bottom: 24px;
   right: 24px;
   outline: 0;
-  z-index: 2;
+  z-index: 5;
   opacity: 0;
 }
 
@@ -1246,6 +1246,83 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   letter-spacing: -.4em
 }
 
+.place-card {
+  position: relative;
+  width: calc(50% - 20px);
+  background: #F5F5F5;
+  border-radius: 3px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  float: left;
+  margin: 20px 10px;
+}
+
+.place-card:before {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  height: 0px;
+  width: 0px;
+  right: 0px;
+  border-top: 18px solid #FFFFFF;
+  border-left: 18px solid #EEEEEE;
+  border-right: 18px solid #FFFFFF;
+  border-bottom: 18px solid #EEEEEE;
+  border-radius: 0 0 0 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.place-card img {
+  width: 100%;
+  height: auto;
+}
+
+.place-card .name {
+  display: inline-block;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #212121;
+  text-decoration: none;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.place-card p {
+  margin: 0 20px 10px !important;
+  font-size: 80%;
+  color: #757575;
+}
+
+.place-card .page, .map {
+  width: calc(100% - 40px);
+  margin: 0 20px 10px;
+  display: block;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.place-card .page {
+  background-color: rgba(0, 205, 237, 1);
+  box-shadow: 0 5px 10px rgba(0, 205, 237, .5);
+}
+
+.place-card .map {
+  background-color: rgba(17, 233, 91, 1);
+  box-shadow: 0 5px 10px rgba(17, 233, 91, .5);
+}
+
+.place-card .off {
+  background-color: #BDBDBD;
+  box-shadow: none;
+}
+
+
 @media (max-width: 1024px) {
   #container #content {
     width: 95%;
@@ -1283,5 +1360,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   }
   .page-archive .entry-thumb {
     height: 210px;
+  }
+  .place-card{
+    width: 100%
   }
 }
