@@ -810,7 +810,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   left: 0
 }
 
-.pullup {
+#pullup {
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -825,11 +825,11 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   cursor: pointer;
 }
 
-.pullup.show{
+#pullup.show{
   opacity: 1;
 }
 
-.pullup i {
+#pullup i {
   color: #fff;
   padding: 14px;
   font-size: 24px
