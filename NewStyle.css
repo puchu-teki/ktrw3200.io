@@ -1183,4 +1183,25 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   .place-card{
     width: 100%
   }
+  
+  .entry-inner {
+    position: relative;
+  }
+  .entry-header {
+    padding-top: 210px;
+  }
+  .entry-content>p:first-of-type img{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .watch .entry-content>p:first-of-type img{
+    position: fixed;
+    top: 10px;
+    left: 9px;
+    width: calc(100% - 18px);
+  }
 }
