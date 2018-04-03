@@ -1195,7 +1195,7 @@ media (max-width: 480px) {
     position: absolute;
     top: 0;
     left: 0;
-    height: 210px;
+    width: 100%;
     overflow: hidden;
     background: #FFF;
     z-index: 19;
@@ -1204,7 +1204,6 @@ media (max-width: 480px) {
     position: fixed;
     top: 10px;
     left: 9px;
-    height: 64px;
   }
   .entry-title {
     position: absolute;
