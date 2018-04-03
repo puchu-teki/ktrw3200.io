@@ -1210,10 +1210,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   }
   .entry-title.set{
     position: fixed;
-    top: 20px;
-    right: 10px;
+    top: 25px;
+    right: 19px;
     z-index: 20;
-    width: 60%;
+    width: calc(60% - 18px);
     font-size: 92%;
     opacity: 0;
   }
